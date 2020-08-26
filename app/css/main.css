@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.9em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bitter", serif; }
+
+h1 {
+  font-size: 4.5em; }
+
+h2 {
+  font-size: 2em; }
+
+html {
+  font-size: 12px; }
+  @media screen and (min-width: 1400px) {
+    html {
+      font-size: 125%; } }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 115%; } }
+
+a {
+  color: #7f5af0;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 3px solid #7f5af0;
+  padding-bottom: 0.1em;
+  transition: 200ms ease-in-out all;
+  position: relative;
+  z-index: 100; }
+  a::after {
+    content: "";
+    background-color: #7f5af0;
+    width: 0;
+    height: 1.4em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 200ms ease-in-out all;
+    z-index: -100; }
+  a:hover {
+    color: #fffffe; }
+    a:hover:after {
+      width: 100%; }
+  a:visited {
+    color: #a389f4;
+    border-color: #a389f4; }
+    a:visited:hover {
+      color: #fffffe; }
+
+a.link-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fffffe;
+  padding: 0.5em 2em;
+  background-color: #7f5af0;
+  border-radius: 0.3em;
+  border: 3px solid #7f5af0; }
+  a.link-github svg {
+    width: 1em;
+    fill: #fffffe;
+    margin-right: 0.5em; }
+  a.link-github:hover {
+    background-color: transparent;
+    color: #7f5af0; }
+    a.link-github:hover svg {
+      fill: #7f5af0; }
+
+.page-footer ul {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none; }
+  .page-footer ul li a {
+    color: #fffffe;
+    padding: 0.5em 2em;
+    background-color: #7f5af0;
+    border-radius: 0.3em;
+    border: 3px solid #7f5af0;
+    transition: 200ms ease-in-out all; }
+    .page-footer ul li a:hover {
+      background-color: transparent;
+      color: #7f5af0; }
