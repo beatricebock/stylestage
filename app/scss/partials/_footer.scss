@@ -17,6 +17,9 @@
           background-color: transparent;
           color: $purple;
         }
+        &::after {
+          display: none;
+        }
       }
     }
   }

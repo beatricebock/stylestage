@@ -68,6 +68,8 @@ a.link-github {
     color: #7f5af0; }
     a.link-github:hover svg {
       fill: #7f5af0; }
+  a.link-github::after {
+    display: none; }
 
 .page-footer ul {
   padding-left: 0;
@@ -85,3 +87,15 @@ a.link-github {
     .page-footer ul li a:hover {
       background-color: transparent;
       color: #7f5af0; }
+    .page-footer ul li a::after {
+      display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
