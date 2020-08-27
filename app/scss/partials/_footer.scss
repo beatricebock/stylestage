@@ -1,4 +1,9 @@
 .page-footer {
+  padding: {
+    top: 2em;
+    bottom: 2em;
+  }
+  background-color: $medium-grey;
   ul {
     padding-left: 0;
     display: flex;
