@@ -17,7 +17,6 @@ h6 {
   font-family: $header-font;
   line-height: 125%;
   color: $white;
-  margin-top: 0;
 }
 
 h1 {
@@ -27,4 +26,13 @@ h1 {
 h2 {
   font-size: 2em;
   letter-spacing: 0.05em;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+ol li {
+  margin-bottom: 1em;
 }

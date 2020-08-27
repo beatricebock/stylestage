@@ -47,11 +47,7 @@ a.link-github {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: $white;
-  padding: 0.5em 2em;
-  background-color: $purple;
-  border-radius: 0.3em;
-  border: 3px solid $purple;
+  @include button;
   svg {
     width: 1em;
     fill: $white;
@@ -59,14 +55,9 @@ a.link-github {
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1) all;
   }
   &:hover {
-    background-color: transparent;
-    color: $purple;
     svg {
       fill: $purple;
       transform: rotate(360deg);
     }
-  }
-  &::after {
-    display: none;
   }
 }

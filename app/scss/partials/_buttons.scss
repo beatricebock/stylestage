@@ -1,0 +1,15 @@
+@mixin button {
+  color: $white;
+  padding: 0.5em 2em;
+  background-color: $purple;
+  border-radius: 0.3em;
+  border: 3px solid $purple;
+  transition: 200ms ease-in-out all;
+  &:hover {
+    background-color: transparent;
+    color: $purple;
+  }
+  &::after {
+    display: none;
+  }
+}

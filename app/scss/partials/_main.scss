@@ -11,3 +11,12 @@ article {
     background-color: $medium-grey;
   }
 }
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1.5em;
+  border-left: 2em solid $grey;
+}
+
+article footer#files {
+}

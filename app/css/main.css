@@ -12,8 +12,7 @@ h5,
 h6 {
   font-family: "Bitter", serif;
   line-height: 125%;
-  color: #fffffe;
-  margin-top: 0; }
+  color: #fffffe; }
 
 h1 {
   font-size: 4.5em; }
@@ -21,6 +20,13 @@ h1 {
 h2 {
   font-size: 2em;
   letter-spacing: 0.05em; }
+
+h1,
+h2 {
+  margin-top: 0; }
+
+ol li {
+  margin-bottom: 1em; }
 
 html {
   font-size: 12px; }
@@ -165,6 +171,11 @@ body {
 
 article:first-of-type, article:last-of-type {
   background-color: #242629; }
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1.5em;
+  border-left: 2em solid #94a1b2; }
 
 .page-footer,
 aside,
