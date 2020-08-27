@@ -1,17 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-$header-font: 'Bitter', serif;
-$paragraph-font: 'Open Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+$header-font: "Bitter", serif;
+$paragraph-font: "Open Sans", sans-serif;
 
 body {
   font-family: $paragraph-font;
   line-height: 1.9em;
+  color: $grey;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font;
+  line-height: 125%;
+  color: $white;
+  margin-top: 0;
 }
 
-h1 { font-size: 4.5em}
+h1 {
+  font-size: 4.5em;
+}
 
-h2 { font-size: 2em}
-
+h2 {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,25 @@
+.page-footer,
+aside,
+article,
+header {
+  margin-left: 9.5em;
+  padding-left: 2em;
+  padding-right: 11.5em;
+  @media screen and (max-width: 800px) {
+    padding-right: 1em;
+  }
+}
+
+aside,
+article,
+header {
+  margin-bottom: 2.5em;
+  padding: {
+    top: 2.5em;
+    bottom: 2.5em;
+  }
+}
+
+section {
+  margin-bottom: 3em;
+}

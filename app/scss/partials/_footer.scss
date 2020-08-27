@@ -3,9 +3,12 @@
     padding-left: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: left;
     list-style: none;
+    flex-wrap: wrap;
     li {
+      margin-bottom: 1em;
+      margin-right: 1em;
       a {
         color: $white;
         padding: 0.5em 2em;
@@ -13,6 +16,7 @@
         border-radius: 0.3em;
         border: 3px solid $purple;
         transition: 200ms ease-in-out all;
+        display: block;
         &:hover {
           background-color: transparent;
           color: $purple;
@@ -21,6 +25,9 @@
           display: none;
         }
       }
+    }
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
     }
   }
 }

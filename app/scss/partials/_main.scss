@@ -1,0 +1,13 @@
+main {
+}
+body {
+  background-color: $black;
+  margin: 0;
+}
+
+article {
+  &:first-of-type,
+  &:last-of-type {
+    background-color: $medium-grey;
+  }
+}
