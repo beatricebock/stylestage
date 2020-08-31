@@ -191,7 +191,7 @@ header p {
 
 header h1 {
   display: inline-block;
-  font-size: 8em;
+  font-size: 6em;
   margin-bottom: 0.2em;
   background: linear-gradient(90deg, #7f5af0 0%, #3ad0ce 50%, #50f2af 100%);
   background-size: 200% 200%;
@@ -201,10 +201,10 @@ header h1 {
   -webkit-text-fill-color: transparent; }
   @media screen and (max-width: 800px) {
     header h1 {
-      font-size: 6em; } }
+      font-size: 4em; } }
   @media screen and (max-width: 400px) {
     header h1 {
-      font-size: 5em; } }
+      font-size: 3em; } }
 
 body {
   background-color: #010101;
@@ -241,26 +241,24 @@ blockquote {
   text-align: center;
   padding-right: 0;
   padding-left: 0; }
-  .profile div {
+  .profile div.container {
     background-color: #242629;
     padding: 2.5em;
-    border-radius: 0.3em; }
-    @media screen and (max-width: 600px) {
-      .profile div {
-        padding: 1.5em; } }
-    .profile div > a {
+    border-radius: 0.3em;
+    width: auto; }
+    .profile div.container > a {
       color: #fffffe;
       padding: 0.5em 2em;
       background-color: #7f5af0;
       border-radius: 0.3em;
       border: 3px solid #7f5af0;
       transition: 200ms ease-in-out all; }
-      .profile div > a:hover {
+      .profile div.container > a:hover {
         background-color: transparent;
         color: #7f5af0; }
-      .profile div > a::after {
+      .profile div.container > a::after {
         display: none; }
-    .profile div h4 {
+    .profile div.container h4 {
       font-size: 2.5em;
       margin-top: 0;
       margin-bottom: 0.9em;
@@ -270,19 +268,19 @@ blockquote {
       animation: headerGradient 2.5s ease infinite;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .profile div ul {
+    .profile div.container ul {
       padding-left: 0;
       margin-bottom: 2em; }
-      .profile div ul li {
+      .profile div.container ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-bottom: 1.5em; }
-        .profile div ul li span:first-of-type {
+        .profile div.container ul li span:first-of-type {
           text-transform: uppercase;
           font-size: 0.7em; }
-        .profile div ul li span:last-of-type {
+        .profile div.container ul li span:last-of-type {
           font-weight: 700; }
 
 #styles ul.features {
@@ -292,7 +290,7 @@ blockquote {
   list-style: none; }
   #styles ul.features li {
     display: block;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
     background-color: #242629;
     border-radius: 0.3em;
     margin-right: 1em;
@@ -304,19 +302,28 @@ blockquote {
   #styles ul.features span {
     display: block; }
 
-.page-footer,
-aside,
+header,
 article,
-header {
-  margin-left: 9.5em;
-  padding-left: 2em;
-  padding-right: 11.5em; }
-  @media screen and (max-width: 800px) {
-    .page-footer,
-    aside,
-    article,
-    header {
-      padding-right: 1em; } }
+aside,
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9.5em; }
+  header > div.container,
+  header section.container,
+  header footer,
+  article > div.container,
+  article section.container,
+  article footer,
+  aside > div.container,
+  aside section.container,
+  aside footer,
+  .page-footer > div.container,
+  .page-footer section.container,
+  .page-footer footer {
+    width: 80%; }
 
 aside,
 article,

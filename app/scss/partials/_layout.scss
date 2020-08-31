@@ -1,12 +1,17 @@
-.page-footer,
-aside,
+header,
 article,
-header {
+aside,
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-left: 9.5em;
-  padding-left: 2em;
-  padding-right: 11.5em;
-  @media screen and (max-width: 800px) {
-    padding-right: 1em;
+
+  & > div.container,
+  section.container,
+  footer {
+    width: 80%;
   }
 }
 
