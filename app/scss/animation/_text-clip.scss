@@ -1,0 +1,36 @@
+@-webkit-keyframes headerGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes headerGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgba(127, 90, 240, 1) 0%,
+    rgba(58, 208, 206, 1) 50%,
+    rgba(80, 242, 175, 1) 100%
+  );
+  background-size: 200% 200%;
+  -webkit-animation: headerGradient 2.5s ease infinite;
+  animation: headerGradient 2.5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

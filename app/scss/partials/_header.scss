@@ -2,4 +2,19 @@ header {
   p {
     margin-bottom: 2em;
   }
+
+  h1 {
+    display: inline-block;
+    font-size: 8em;
+    margin-bottom: 0.2em;
+    @include gradient-text;
+
+    @media screen and (max-width: 800px) {
+      font-size: 6em;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 5em;
+    }
+  }
 }
