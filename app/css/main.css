@@ -234,25 +234,6 @@ blockquote {
   #files a::after {
     display: none; }
 
-#styles ul.features {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  list-style: none; }
-  #styles ul.features li {
-    display: block;
-    padding: 1em 2em;
-    background-color: #242629;
-    border-radius: 0.3em;
-    margin-right: 1em;
-    margin-bottom: 1em; }
-    #styles ul.features li a:hover {
-      color: #fffffe; }
-      #styles ul.features li a:hover span {
-        display: none; }
-  #styles ul.features span {
-    display: block; }
-
 .profile {
   display: flex;
   align-items: center;
@@ -267,6 +248,18 @@ blockquote {
     @media screen and (max-width: 600px) {
       .profile div {
         padding: 1.5em; } }
+    .profile div > a {
+      color: #fffffe;
+      padding: 0.5em 2em;
+      background-color: #7f5af0;
+      border-radius: 0.3em;
+      border: 3px solid #7f5af0;
+      transition: 200ms ease-in-out all; }
+      .profile div > a:hover {
+        background-color: transparent;
+        color: #7f5af0; }
+      .profile div > a::after {
+        display: none; }
     .profile div h4 {
       font-size: 2.5em;
       margin-top: 0;
@@ -291,6 +284,25 @@ blockquote {
           font-size: 0.7em; }
         .profile div ul li span:last-of-type {
           font-weight: 700; }
+
+#styles ul.features {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none; }
+  #styles ul.features li {
+    display: block;
+    padding: 1em 2em;
+    background-color: #242629;
+    border-radius: 0.3em;
+    margin-right: 1em;
+    margin-bottom: 1em; }
+    #styles ul.features li a:hover {
+      color: #fffffe; }
+      #styles ul.features li a:hover span {
+        display: none; }
+  #styles ul.features span {
+    display: block; }
 
 .page-footer,
 aside,
