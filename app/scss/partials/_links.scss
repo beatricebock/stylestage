@@ -38,18 +38,14 @@ a {
 }
 
 a.skip-link {
-  margin-left: 12em;
-  margin-top: 1em;
-  display: inline-block;
+  display: table;
+  margin: {
+    left: auto;
+    right: auto;
+    top: 1em;
+  }
   &:after {
     height: 1.8em;
-  }
-  @media screen and (max-width: 800px) {
-    display: table;
-    margin: {
-      left: auto;
-      right: auto;
-    }
   }
 }
 

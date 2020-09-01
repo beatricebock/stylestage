@@ -86,16 +86,12 @@ a {
       color: #fffffe; }
 
 a.skip-link {
-  margin-left: 12em;
-  margin-top: 1em;
-  display: inline-block; }
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em; }
   a.skip-link:after {
     height: 1.8em; }
-  @media screen and (max-width: 800px) {
-    a.skip-link {
-      display: table;
-      margin-left: auto;
-      margin-right: auto; } }
 
 a.link-github {
   display: inline-flex;
