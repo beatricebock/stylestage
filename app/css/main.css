@@ -29,7 +29,7 @@ ol li {
   margin-bottom: 1em; }
 
 html {
-  font-size: 12px; }
+  font-size: 15px; }
   @media screen and (min-width: 1400px) {
     html {
       font-size: 125%; } }
@@ -91,6 +91,11 @@ a.skip-link {
   display: inline-block; }
   a.skip-link:after {
     height: 1.8em; }
+  @media screen and (max-width: 800px) {
+    a.skip-link {
+      display: table;
+      margin-left: auto;
+      margin-right: auto; } }
 
 a.link-github {
   display: inline-flex;
@@ -185,9 +190,26 @@ nav {
           display: none; }
       nav ul li:hover {
         background-color: #242629; }
+  @media screen and (max-width: 800px) {
+    nav {
+      bottom: 0;
+      top: auto;
+      height: 6em;
+      width: 100vw;
+      z-index: 200; }
+      nav ul {
+        flex-direction: row;
+        overflow: scroll;
+        margin: 0; }
+        nav ul li a {
+          box-sizing: content-box;
+          padding: 2em 3em; } }
 
 header p {
   margin-bottom: 2em; }
+
+header h2 {
+  font-size: 1.5em; }
 
 header h1 {
   display: inline-block;
@@ -201,10 +223,10 @@ header h1 {
   -webkit-text-fill-color: transparent; }
   @media screen and (max-width: 800px) {
     header h1 {
-      font-size: 4em; } }
+      font-size: 5em; } }
   @media screen and (max-width: 400px) {
     header h1 {
-      font-size: 3em; } }
+      font-size: 4em; } }
 
 body {
   background-color: #010101;
@@ -324,6 +346,12 @@ aside,
   .page-footer section.container,
   .page-footer footer {
     width: 80%; }
+  @media screen and (max-width: 800px) {
+    header,
+    article,
+    aside,
+    .page-footer {
+      margin-left: 0; } }
 
 aside,
 article,

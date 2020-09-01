@@ -38,4 +38,22 @@ nav {
       }
     }
   }
+  @media screen and (max-width: 800px) {
+    bottom: 0;
+    top: auto;
+    height: 6em;
+    width: 100vw;
+    z-index: 200;
+    ul {
+      flex-direction: row;
+      overflow: scroll;
+      margin: 0;
+      li {
+        a {
+          box-sizing: content-box;
+          padding: 2em 3em;
+        }
+      }
+    }
+  }
 }

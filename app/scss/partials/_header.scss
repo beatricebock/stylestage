@@ -3,6 +3,10 @@ header {
     margin-bottom: 2em;
   }
 
+  h2 {
+    font-size: 1.5em;
+  }
+
   h1 {
     display: inline-block;
     font-size: 6em;
@@ -10,11 +14,11 @@ header {
     @include gradient-text;
 
     @media screen and (max-width: 800px) {
-      font-size: 4em;
+      font-size: 5em;
     }
 
     @media screen and (max-width: 400px) {
-      font-size: 3em;
+      font-size: 4em;
     }
   }
 }

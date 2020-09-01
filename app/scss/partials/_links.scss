@@ -44,6 +44,13 @@ a.skip-link {
   &:after {
     height: 1.8em;
   }
+  @media screen and (max-width: 800px) {
+    display: table;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
 }
 
 a.link-github {
