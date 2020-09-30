@@ -85,6 +85,9 @@ a {
     a:visited:hover {
       color: #fffffe; }
 
+.features a {
+  z-index: auto; }
+
 a.skip-link {
   display: table;
   margin-left: auto;
