@@ -10,3 +10,5 @@ View the live version [here](https://stylestage.vercel.app/)
 -  :blush: [Happy Hues](happyhues.co)
 - :scroll: [Shields.io](https://shields.io/)
 - :floppy_disk: [Vercel](https://vercel.com)
+
+![Screenshot](https://github.com/beatricebock/stylestage/blob/master/Screenshot_2020-09-01%20Soff%20by%20Beatrice%20Style%20Stage.png)
